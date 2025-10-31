@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: green;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    /* Centraliza o container no centro da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    max-width: 600px;
+    width: 90%; /* Ajuste para melhor responsividade */
+    box-shadow: 4px 3px rgba(0,0,0,0.5);
+
+    /* REGRAS ESSENCIAIS PARA COLUNA */
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+h2 {
+    color: blue;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.nomeCandidato, .idadeCandidato {
+   
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Espaço menor entre label e input */
+}
+
+label {
+    font-weight: 600;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 100%; }
+
+button {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+.reultado {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+#resultado {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+}

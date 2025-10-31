@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sistema de Votação</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Análise de Situação Eleitoral</h1>
+        <p>Para fazer o cadastro informe os dados completos</p>
+        <div class="divnome" id="divnome">
+            <label for="divnome">Nome completo</label>
+            <input type="text" name="nome" id="nome" class="nome" placeholder="Exemplo.: Linda Belo da Silva">
+        </div>
+        <div class="dividade" id="dividade">
+            <label for="idade">Idade em 01/01/2027</label>
+            <input type="text" name="idade" id="idade" class="idade" placeholder="72">
+        </div>          
+        <button type="button" onclick="verificacao()">Verificação</button>
+            <div class="resultado" id="resultado"></div>
+            <h2>Status</h2>
+            <p>Aguardando resultado...</p>
+        <button type="button" onclick="transformar()">Trocar cor</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
